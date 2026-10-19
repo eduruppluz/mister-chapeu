@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mister Chapéu · Molhos Premium | Curitiba</title>
+  <meta name="description" content="Molhos premium da Mister Chapéu, de Curitiba: Tradicional, Pimenta Forte, Especial da Casa, Chocolate com Pimenta, Geleia Agridoce e Maionese Verde. Peça pelo WhatsApp.">
+  <meta name="theme-color" content="#0b0a09">
+  <meta name="robots" content="noindex, nofollow"><!-- proposta: remover após aprovação -->
+  <meta property="og:title" content="Mister Chapéu · Molhos Premium">
+  <meta property="og:description" content="Tire o chapéu pro sabor. Molhos premium com pedido direto pelo WhatsApp.">
+  <link rel="icon" href="assets/img/chapeu.png">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Mister Chapéu, início">
+        <img src="assets/img/logo-mister-chapeu.png" alt="Mister Chapéu" width="640" height="353">
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#sabores" class="nav__link"><span class="nav__num">01</span>Sabores</a></li>
+          <li><a href="#kit" class="nav__link"><span class="nav__num">02</span>Kits</a></li>
+          <li><a href="#quem-prova" class="nav__link"><span class="nav__num">03</span>Quem prova</a></li>
+          <li><a href="#negocios" class="nav__link"><span class="nav__num">04</span>Para o seu negócio</a></li>
+        </ul>
+        <a class="btn btn--gold nav__cta" data-wa="pedido" href="#">
+          <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+          Fazer pedido
+        </a>
+        <p class="nav__foot">Curitiba · PR</p>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/hero-mesa.webp" alt="" width="1681" height="936" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__kicker" data-hero-step>
+            <span class="holo">Molhos Premium</span>
+            <span class="sep" aria-hidden="true"></span>
+            Curitiba, PR
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span class="line__in">Tire o <span class="hat-word">chapéu<img class="hat" src="assets/img/chapeu.png" alt="" width="520" height="379"></span></span></span>
+            <span class="line"><span class="line__in">pro <em>sabor.</em></span></span>
+          </h1>
+
+          <p class="hero__lead" data-hero-step>
+            Molhos premium, do Tradicional ao Chocolate com Pimenta.
+            Pra mesa da sua casa e pro balcão do seu negócio.
+          </p>
+
+          <div class="hero__actions" data-hero-step>
+            <a href="#sabores" class="btn btn--gold btn--lg">
+              Conhecer os sabores
+              <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a href="#negocios" class="btn btn--line btn--lg">Sou comerciante</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#sabores" class="hero__scroll" aria-label="Rolar para os sabores"><span></span></a>
+    </section>
+
+    <!-- ================= FAIXA ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee"></div>
+    </div>
+
+    <!-- ================= SABORES ================= -->
+    <section class="section flavors" id="sabores" aria-labelledby="sabores-title">
+      <div class="container">
+        <header class="head">
+          <p class="kicker reveal"><span>01</span>A linha</p>
+          <h2 class="title reveal" id="sabores-title">Sabores da casa,<br><em>um só chapéu.</em></h2>
+          <p class="lead reveal">Garrafa e pote de vidro de 250&nbsp;ml, rótulo preto e dourado e etiqueta amarrada à mão no gargalo. Escolha o seu e peça direto pelo WhatsApp.</p>
+        </header>
+
+        <div class="picker reveal">
+          <div class="picker__list" role="tablist" aria-label="Sabores" id="flavor-tabs"></div>
+
+          <div class="picker__stage" id="flavor-stage" role="tabpanel" aria-live="polite">
+            <div class="picker__media">
+              <div class="picker__glow" aria-hidden="true"></div>
+              <div class="picker__photos" id="flavor-photos"></div>
+              <button type="button" class="picker__nav picker__nav--prev" data-flavor="prev" aria-label="Sabor anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <button type="button" class="picker__nav picker__nav--next" data-flavor="next" aria-label="Próximo sabor"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <p class="picker__count" aria-hidden="true"><span id="flavor-index">01</span> / <span id="flavor-total">01</span></p>
+            </div>
+            <div class="picker__info">
+              <p class="picker__tag" id="flavor-tag"></p>
+              <h3 class="picker__name" id="flavor-name"></h3>
+              <p class="picker__desc" id="flavor-desc"></p>
+              <dl class="picker__meta">
+                <div><dt>Embalagem</dt><dd id="flavor-pack"></dd></div>
+                <div><dt>Volume</dt><dd>250 ml</dd></div>
+              </dl>
+              <a class="btn btn--gold btn--lg picker__cta" id="flavor-cta" href="#" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+                <span id="flavor-cta-label">Pedir este sabor</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMBINA COM ================= -->
+    <section class="section uses" id="combina" aria-labelledby="combina-title">
+      <img class="uses__pepper" src="assets/img/pimenta-dir.png" alt="" width="360" height="397" loading="lazy">
+      <div class="container uses__grid">
+        <header class="head uses__head">
+          <p class="kicker kicker--cream reveal"><span>02</span>Combina com</p>
+          <h2 class="title reveal" id="combina-title">Um molho pra<br><em>cada prato.</em></h2>
+          <p class="lead reveal">Algumas ideias pra começar. O resto, a sua cozinha decide.</p>
+          <a href="#sabores" class="btn btn--dark btn--lg reveal">
+            Escolher o meu sabor
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </header>
+
+        <div class="menu reveal">
+          <div class="menu__head">
+            <svg viewBox="0 0 160 16" aria-hidden="true"><use href="#i-orn"/></svg>
+            <p>Vai bem com</p>
+            <svg viewBox="0 0 160 16" aria-hidden="true"><use href="#i-orn"/></svg>
+          </div>
+          <ol class="menu__list">
+            <li class="menu__item"><span class="menu__n">01</span><div class="menu__body"><h3 class="menu__name">Hambúrguer</h3><p class="menu__desc">No blend, no pão, no balcão da hamburgueria.</p></div><img class="menu__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy"></li>
+            <li class="menu__item"><span class="menu__n">02</span><div class="menu__body"><h3 class="menu__name">Carnes e churrasco</h3><p class="menu__desc">Pro corte que acabou de sair da brasa.</p></div><img class="menu__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy"></li>
+            <li class="menu__item"><span class="menu__n">03</span><div class="menu__body"><h3 class="menu__name">Petiscos e porções</h3><p class="menu__desc">Batata, frango, pastel: tudo pede um pote ao lado.</p></div><img class="menu__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy"></li>
+            <li class="menu__item"><span class="menu__n">04</span><div class="menu__body"><h3 class="menu__name">Lanches e cachorro-quente</h3><p class="menu__desc">O toque final de qualquer sanduíche.</p></div><img class="menu__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy"></li>
+            <li class="menu__item"><span class="menu__n">05</span><div class="menu__body"><h3 class="menu__name">Pizza e salgados</h3><p class="menu__desc">Umas gotas antes da primeira mordida.</p></div><img class="menu__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy"></li>
+            <li class="menu__item"><span class="menu__n">06</span><div class="menu__body"><h3 class="menu__name">O jantar de casa</h3><p class="menu__desc">Do arroz com feijão ao almoço de domingo.</p></div><img class="menu__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KIT ================= -->
+    <section class="section kit" id="kit" aria-labelledby="kit-title">
+      <div class="container">
+        <header class="head kit__head">
+          <p class="kicker kicker--light reveal"><span>03</span>Kits</p>
+          <h2 class="title reveal" id="kit-title">Leve o kit.<br><em>Ganhe o brinde.</em></h2>
+          <p class="lead reveal">Dois kits de molhos premium, cada um com um brinde personalizado Mister Chapéu VIP. Escolha o seu e peça pelo WhatsApp.</p>
+        </header>
+
+        <div class="kits">
+          <article class="kit-card reveal">
+            <figure class="kit-card__art">
+              <img src="assets/img/kit-5.webp" alt="Kit 5 Molhos Premium por R$ 119,90: cinco garrafas Mister Chapéu e uma caneca personalizada VIP de brinde" width="506" height="1536" loading="lazy" decoding="async">
+            </figure>
+            <div class="kit-card__body">
+              <p class="kit-card__tag">Brinde: caneca personalizada</p>
+              <h3 class="kit-card__name">Kit 5 Molhos Premium</h3>
+              <p class="kit-card__price"><small>R$</small> 119,90</p>
+              <a class="btn btn--dark btn--lg kit-card__cta" data-wa="kit5" href="#">
+                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+                Quero o Kit 5
+              </a>
+            </div>
+          </article>
+
+          <article class="kit-card kit-card--feat reveal">
+            <figure class="kit-card__art">
+              <img src="assets/img/kit-6.webp" alt="Kit 6 Molhos Premium por R$ 149,90: cinco garrafas, um pote Mister Chapéu e um copo térmico personalizado VIP de brinde" width="506" height="1536" loading="lazy" decoding="async">
+            </figure>
+            <div class="kit-card__body">
+              <p class="kit-card__tag">Brinde: copo personalizado</p>
+              <h3 class="kit-card__name">Kit 6 Molhos Premium</h3>
+              <p class="kit-card__price"><small>R$</small> 149,90</p>
+              <a class="btn btn--dark btn--lg kit-card__cta" data-wa="kit6" href="#">
+                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+                Quero o Kit 6
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUEM PROVA ================= -->
+    <section class="section proof" id="quem-prova" aria-labelledby="prova-title">
+      <div class="container proof__grid">
+        <header class="head proof__head">
+          <p class="kicker reveal"><span>04</span>Quem prova</p>
+          <h2 class="title reveal" id="prova-title">Quem prova,<br><em>manda mensagem.</em></h2>
+          <p class="lead reveal">Mensagens de clientes que chegaram no WhatsApp e no Instagram da Mister Chapéu, do jeito que foram escritas.</p>
+          <figure class="ig-quote reveal">
+            <blockquote>“O sabor é incrível, agora o primeiro impacto é a embalagem, e ficou top demais. Parabéns rapaziada.”</blockquote>
+            <figcaption><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg> Comentário no Instagram</figcaption>
+          </figure>
+        </header>
+
+        <div class="chats" id="chats">
+          <article class="chat" aria-label="Mensagem de Diego">
+            <p class="chat__who">Diego</p>
+            <p class="bubble">recebi sim, já estavamo provando aqui</p>
+            <p class="bubble">que delicia essa de chocolate</p>
+            <p class="bubble">estavamos comendo com a colher kkkkk</p>
+          </article>
+          <article class="chat" aria-label="Mensagem de Marisa">
+            <p class="chat__who">Marisa</p>
+            <p class="bubble">Deixa eu te contar, que a mãe quis experimentar já no jantar o molho, gostamos muito, uma delícia 👏👏👏</p>
+            <p class="bubble">Um ardidinho muito suave</p>
+          </article>
+          <article class="chat" aria-label="Mensagens de Evelise">
+            <p class="chat__who">Evelise</p>
+            <p class="bubble">Amei a pimenta!! Parabéns!!</p>
+            <p class="bubble">Cara eu não fico sem pimenta kkkk</p>
+            <p class="bubble">Não troco mais! Uma delícia de molho! Não durou 1 mês!</p>
+          </article>
+          <article class="chat" aria-label="Mensagem de cliente">
+            <p class="chat__who">Cliente</p>
+            <p class="bubble">Boa noite meu amigo, provei o molho de pimenta e fiquei surpreso com a qualidade e sabor, está de parabéns, nota 1000!!! Eu e minha esposa recomendamos e assinamos em baixo 👏🏻👏🏻👏🏻👏🏻👏🏻 🙏</p>
+          </article>
+          <article class="chat" aria-label="Mensagem de Elis pelo Instagram">
+            <p class="chat__who">Elis · pelo Instagram</p>
+            <p class="bubble">Muito bons os molhos 👏🏻👏🏻👏🏻</p>
+          </article>
+          <article class="chat" aria-label="Mensagem de cliente">
+            <p class="chat__who">Resposta a um status</p>
+            <p class="bubble">Fui na pani ali na principal tinha essa pimenta. É uma delícia parabéns Deus abençoe 🙏</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEGÓCIOS ================= -->
+    <section class="section biz" id="negocios" aria-labelledby="negocios-title">
+      <div class="container">
+        <div class="biz__top">
+          <header class="head">
+            <p class="kicker reveal"><span>05</span>Para o seu negócio</p>
+            <h2 class="title reveal" id="negocios-title">Aproximando pessoas,<br><em>gerando negócios.</em></h2>
+          </header>
+          <p class="lead reveal">Lanchonete, restaurante, empório ou mercado: a Mister Chapéu já atende centenas de comerciantes e lojistas. Chame no WhatsApp e receba o catálogo e as condições pra levar os molhos pro seu balcão.</p>
+        </div>
+
+        <div class="biz__grid">
+          <figure class="sign reveal">
+            <div class="sign__board">
+              <img src="assets/img/marca-molhos-premium.jpg" alt="Arte da marca: Mister Chapéu, Molhos Premium, com duas pimentas vermelhas" width="900" height="884" loading="lazy">
+            </div>
+            <figcaption>A marca que já está no balcão de centenas de comerciantes.</figcaption>
+          </figure>
+
+          <div class="biz__side">
+            <div class="numbers reveal">
+              <div class="numbers__item"><span class="numbers__big">Centenas</span><span class="numbers__label">de comerciantes e lojistas atendidos</span></div>
+              <div class="numbers__item"><span class="numbers__big">Milhares</span><span class="numbers__label">de molhos vendidos e comercializados</span></div>
+            </div>
+
+            <ol class="steps">
+              <li class="step reveal"><span class="step__n">1</span><div><h3>Chame no WhatsApp</h3><p>Conte qual é o seu negócio e onde fica.</p></div></li>
+              <li class="step reveal"><span class="step__n">2</span><div><h3>Receba o catálogo</h3><p>Sabores, formatos e condições para lojistas.</p></div></li>
+              <li class="step reveal"><span class="step__n">3</span><div><h3>Leve pro seu balcão</h3><p>Seus clientes provam, e voltam pedindo.</p></div></li>
+            </ol>
+
+            <a class="btn btn--gold btn--lg reveal" data-wa="revenda" href="#">
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+              Pedir catálogo e condições
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="container final__inner">
+        <img class="final__pepper final__pepper--l" src="assets/img/pimenta-esq.png" alt="" width="360" height="376" loading="lazy">
+        <img class="final__pepper final__pepper--r" src="assets/img/pimenta-dir.png" alt="" width="360" height="397" loading="lazy">
+        <img class="final__hat" src="assets/img/chapeu.png" alt="" width="520" height="379" loading="lazy">
+        <h2 class="final__title reveal" id="final-title">Deseja ter<br>nossos molhos?</h2>
+        <p class="final__lead reveal">Faça seu pedido. A resposta vem pelo WhatsApp.</p>
+        <div class="final__actions reveal">
+          <a class="btn btn--dark btn--lg" data-wa="pedido" href="#">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            Fazer meu pedido
+          </a>
+          <a class="btn btn--line-dark btn--lg" href="#sabores">Ver os sabores</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo-mister-chapeu.png" alt="Mister Chapéu" width="640" height="353" loading="lazy">
+          <p>Molhos Premium. Aproximando pessoas, gerando negócios.</p>
+        </div>
+        <nav aria-label="Rodapé">
+          <h3 class="footer__title">Navegue</h3>
+          <ul>
+            <li><a href="#sabores">Sabores</a></li>
+            <li><a href="#kit">Kits</a></li>
+            <li><a href="#quem-prova">Quem prova</a></li>
+            <li><a href="#negocios">Para o seu negócio</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="footer__title">Fale com a gente</h3>
+          <ul>
+            <li><a data-wa="pedido" href="#">WhatsApp (41) 98873-7581</a></li>
+            <li><a data-instagram href="https://www.instagram.com/misterchapeu_molhos/" target="_blank" rel="noopener">Instagram @misterchapeu_molhos</a></li>
+            <li class="muted">Curitiba, Paraná</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__warn">
+        <svg viewBox="0 0 160 16" aria-hidden="true"><use href="#i-orn"/></svg>
+        <p><strong>Mister Chapéu adverte:</strong> molhos com alto padrão de qualidade, use sem moderação.</p>
+        <svg viewBox="0 0 160 16" aria-hidden="true"><use href="#i-orn"/></svg>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Mister Chapéu Molhos Premium.</p>
+        <p>Site por <strong>Clear Code ERL</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CTA fixo -->
+  <a class="sticky-cta" data-wa="pedido" href="#">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+    <span>Pedir pelo WhatsApp</span>
+  </a>
+
+  <!-- ================= ÍCONES ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-orn" viewBox="0 0 160 16">
+      <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M2 8h50"/>
+        <path d="M52 8c6 0 9-3 7-5.2-1.7-1.8-4.6.4-2.6 2.6 2 2.2 6.5 2.6 10.6 2.6"/>
+        <path d="M52 8c6 0 9 3 7 5.2-1.7 1.8-4.6-.4-2.6-2.6 2-2.2 6.5-2.6 10.6-2.6"/>
+        <path d="M158 8h-50"/>
+        <path d="M108 8c-6 0-9-3-7-5.2 1.7-1.8 4.6.4 2.6 2.6-2 2.2-6.5 2.6-10.6 2.6"/>
+        <path d="M108 8c-6 0-9 3-7 5.2 1.7 1.8 4.6-.4 2.6-2.6-2-2.2-6.5-2.6-10.6-2.6"/>
+      </g>
+      <path fill="currentColor" d="M80 2.5l5.5 5.5-5.5 5.5-5.5-5.5z"/>
+    </symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
