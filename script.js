@@ -25,37 +25,37 @@ const FLAVORS = [
   {
     id: "tradicional", name: "Tradicional", full: "Molho de Pimenta Tradicional",
     tag: "Molho de pimenta", pack: "Garrafa de vidro",
-    desc: "O molho de pimenta clássico da casa. Bom começo pra quem ainda não conhece a Mister Chapéu.",
+    desc: "O molho de pimenta clássico. Bom começo para quem ainda não conhece a Mister Chapéu.",
     img: "assets/img/garrafa-tradicional.webp", glow: "#e2892c",
   },
   {
     id: "pimenta-forte", name: "Pimenta Forte", full: "Molho de Pimenta Forte",
     tag: "Molho de pimenta", pack: "Garrafa de vidro",
-    desc: "Pra quem gosta de sentir a pimenta. A versão mais intensa da linha.",
+    desc: "Para quem gosta de sentir a ardência. A versão mais intensa da linha.",
     img: "assets/img/garrafa-pimenta-forte.webp", glow: "#e7a24a",
   },
   {
     id: "especial-da-casa", name: "Especial da Casa", full: "Molho Especial da Casa",
     tag: "Da casa", pack: "Garrafa de vidro",
-    desc: "O sabor que leva o nome da casa. Pergunte no WhatsApp e descubra por que ele é o especial.",
+    desc: "Feito com um mix de pimentas selecionadas e um toque especial defumado.",
     img: "assets/img/garrafa-especial-da-casa.webp", glow: "#d75a24",
   },
   {
     id: "chocolate-com-pimenta", name: "Chocolate com Pimenta", full: "Molho de Chocolate com Pimenta",
     tag: "Doce com pimenta", pack: "Garrafa de vidro",
-    desc: "Chocolate e pimenta no mesmo frasco. Tem cliente que come de colher.",
+    desc: "Chocolate com pimenta no mesmo frasco? Tem cliente que come de colher.",
     img: "assets/img/garrafa-chocolate-com-pimenta.webp", glow: "#8a3a1c",
   },
   {
     id: "agridoce", name: "Geleia Agridoce", full: "Geleia de Pimenta Agridoce",
     tag: "Geleia de pimenta", pack: "Garrafa de vidro",
-    desc: "Geleia de pimenta no ponto agridoce, com a cor mais viva da linha.",
+    desc: "Com a cor mais viva da linha, entregamos o equilíbrio da ardência e a doçura da geleia. Com vocês, a nossa Agridoce.",
     img: "assets/img/garrafa-agridoce.webp", glow: "#d3262a",
   },
   {
     id: "maionese-verde", name: "Maionese Verde", full: "Maionese Verde",
     tag: "Maionese", pack: "Pote de vidro",
-    desc: "A maionese verde da Mister Chapéu, no pote de vidro com tampa dourada.",
+    desc: "Com vocês, a queridinha da Mister Chapéu. Sabor único e inigualável, do começo ao fim.",
     img: "assets/img/pote-maionese-verde.webp", wide: true, glow: "#a9b86c",
   },
 ];

@@ -203,7 +203,7 @@ body::after {
 
 .hero__title {
   font-family: var(--f-display); font-weight: 400; text-transform: uppercase;
-  font-size: clamp(3.1rem, 13.6vw, 7.2rem); line-height: 1.04; letter-spacing: .004em;
+  font-size: clamp(2.6rem, 11.4vw, 6.2rem); line-height: 1.04; letter-spacing: .004em;
   margin-top: clamp(30px, 4.4vw, 56px);
 }
 .hero__title .line { display: block; overflow: hidden; padding-top: .5em; margin-top: -.5em; }
@@ -332,10 +332,10 @@ body::after {
 .picker__cta { margin-top: 30px; width: 100%; }
 
 /* ---------- Combina com ---------- */
-.uses { background: var(--red); color: var(--cream); overflow: hidden; }
-.uses::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(60% 70% at 85% 30%, rgba(255, 120, 80, .25), transparent 60%), radial-gradient(50% 60% at 0% 100%, rgba(80, 8, 10, .55), transparent 70%); }
-.uses .title em { color: var(--yellow); }
-.uses .lead { color: rgba(243, 234, 216, .86); }
+.uses { background: var(--yellow); color: var(--ink); overflow: hidden; }
+.uses::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(60% 70% at 85% 30%, rgba(255, 220, 120, .45), transparent 60%), radial-gradient(50% 60% at 0% 100%, rgba(200, 110, 0, .22), transparent 70%); }
+.uses .title em { color: var(--red); }
+.uses .lead { color: rgba(23, 19, 15, .78); }
 .uses .btn { margin-top: 32px; }
 .kicker--cream { color: var(--cream); }
 .kicker--cream span { color: var(--yellow); }
@@ -386,7 +386,7 @@ body::after {
 }
 
 /* ---------- Kit ---------- */
-.kit { background: var(--yellow); color: var(--ink); overflow: hidden; }
+.kit { background: var(--cream); color: var(--ink); overflow: hidden; }
 .kit .title em { color: var(--red); }
 .kit .lead { color: rgba(23, 19, 15, .78); }
 
@@ -599,6 +599,7 @@ body::after {
   .uses__pepper { right: auto; left: 3%; top: auto; bottom: -70px; rotate: -28deg; width: 230px; }
   .uses__grid { grid-template-columns: .7fr 1.3fr; }
   .uses .title { font-size: clamp(2.6rem, 4.6vw, 4.2rem); }
+  .biz .title { font-size: clamp(2.6rem, 4.8vw, 4.4rem); }
   .final__pepper { width: clamp(120px, 13vw, 200px); }
   .final__pepper--l { left: 2%; right: auto; top: 26%; rotate: -8deg; }
   .final__pepper--r { right: 2%; left: auto; top: 38%; rotate: 10deg; }
