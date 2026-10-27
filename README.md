@@ -10,7 +10,7 @@ Abra a pasta no VS Code e use a extensão Live Server (ou dê dois cliques em `i
 
 ## Estrutura
 ```
-index.html     Seções: hero (foto da mesa com a garrafa), faixa, sabores (com setas e arrastar no celular), combina com, kits (Kit 5 e Kit 6), quem prova, para o seu negócio, CTA, rodapé
+index.html     Seções: hero (foto da mesa com a garrafa), faixa, sabores (com setas e arrastar no celular), combina com, kits (Kit 01 e Kit 02), quem prova, para o seu negócio, CTA, rodapé
 style.css      Tokens (cores do rótulo e do logo), componentes, animações, responsivo (mobile-first)
 script.js      CONFIG (WhatsApp e mensagens), FLAVORS (sabores da linha) e todas as interações
 assets/img/    Logo, chapéu e pimentas (recortados da arte enviada), cursor de pimenta (1x e 2x), garrafas e pote em PNG/WebP com fundo transparente, foto do hero

@@ -8,8 +8,8 @@ const CONFIG = {
   instagram: "https://www.instagram.com/misterchapeu_molhos/",
   messages: {
     pedido: "Olá, Mister Chapéu! Vim pelo site e quero fazer um pedido.",
-    kit5: "Olá, Mister Chapéu! Vim pelo site e quero o Kit 5 Molhos Premium (R$ 119,90) com a caneca personalizada.",
-    kit6: "Olá, Mister Chapéu! Vim pelo site e quero o Kit 6 Molhos Premium (R$ 149,90) com o copo personalizado.",
+    kit01: "Olá, Mister Chapéu! Vim pelo site e quero o Kit 01 Molhos Premium (R$ 199,90) com a caneca personalizada.",
+    kit02: "Olá, Mister Chapéu! Vim pelo site e quero o Kit 02 Molhos Premium (R$ 249,90) com o copo personalizado.",
     revenda: "Olá, Mister Chapéu! Tenho um estabelecimento e quero receber o catálogo e as condições para lojistas.",
     sabor: (nome) => `Olá, Mister Chapéu! Vim pelo site e quero pedir o ${nome}.`,
   },
