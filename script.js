@@ -61,7 +61,7 @@ const FLAVORS = [
   {
     id: "pimentao", name: "Pimentão", full: "Molho de Pimentão",
     tag: "Zero ardência", pack: "Garrafa de vidro",
-    desc: "Esta opção foi criada única e exclusivamente para entregar somente o sabor, com 0 teor de ardência. Apresentamos a vocês o nosso acompanhamento perfeito para os amantes do sabor.",
+    desc: "Esta opção foi criada única e exclusivamente para entregar somente o sabor, com zero teor de ardência. Apresentamos a vocês o nosso acompanhamento perfeito para os amantes do sabor.",
     img: "assets/img/garrafa-tradicional.webp", glow: "#e9b23a", // foto provisória
   },
   {
