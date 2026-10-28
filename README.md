@@ -1,9 +1,9 @@
-# Mister Chapéu · Site institucional (v2.3)
+# Mister Chapéu · Site institucional (v3.0)
 
 Proposta da **Clear Code ERL**. HTML5, CSS e JavaScript puro, sem dependências e sem build.
 
 ## Ver online
-Publicado com GitHub Pages.
+Publicado com GitHub Pages em https://misterchapeu.com.br
 
 ## Rodar localmente
 Abra a pasta no VS Code e use a extensão Live Server (ou dê dois cliques em `index.html`).
