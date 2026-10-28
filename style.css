@@ -341,7 +341,7 @@ body::after {
 /* ---------- Combina com ---------- */
 .uses { background: var(--yellow); color: var(--ink); overflow: hidden; }
 .uses::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(60% 70% at 85% 30%, rgba(255, 220, 120, .45), transparent 60%), radial-gradient(50% 60% at 0% 100%, rgba(200, 110, 0, .22), transparent 70%); }
-.uses .title em { color: var(--red); }
+.uses .title em { color: var(--ink); }
 .uses .lead { color: rgba(23, 19, 15, .78); }
 .uses .btn { margin-top: 32px; }
 .kicker--cream { color: var(--cream); }

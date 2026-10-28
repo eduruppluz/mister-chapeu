@@ -62,13 +62,13 @@ const FLAVORS = [
     id: "pimentao", name: "Pimentão", full: "Molho de Pimentão",
     tag: "Zero ardência", pack: "Garrafa de vidro",
     desc: "Esta opção foi criada única e exclusivamente para entregar somente o sabor, com 0 teor de ardência. Apresentamos a vocês o nosso acompanhamento perfeito para os amantes do sabor.",
-    img: "assets/img/garrafa-pimenta-forte.webp", glow: "#e7a24a", // foto provisória
+    img: "assets/img/garrafa-tradicional.webp", glow: "#e9b23a", // foto provisória
   },
   {
     id: "agridoce-de-abacaxi", name: "Agridoce de Abacaxi", full: "Agridoce de Abacaxi",
     tag: "Geleia de pimenta", pack: "Garrafa de vidro",
     desc: "O equilíbrio da ardência com a doçura da geleia, agora com aquele toque especial frutado. Com vocês, o nosso Agridoce de Abacaxi.",
-    img: "assets/img/garrafa-tradicional.webp", glow: "#e9b23a", // foto provisória
+    img: "assets/img/garrafa-pimenta-forte.webp", glow: "#e7a24a", // foto provisória
   },
 ];
 
