@@ -29,7 +29,7 @@ const FLAVORS = [
     img: "assets/img/garrafa-tradicional.webp", glow: "#e2892c",
   },
   {
-    id: "pimenta-forte", name: "Pimenta Forte", full: "Molho de Pimenta Forte",
+    id: "pimenta-forte", name: "Forte", full: "Molho de Pimenta Forte",
     tag: "Molho de pimenta", pack: "Garrafa de vidro",
     desc: "Para quem gosta de sentir a ardência. A versão mais intensa da linha.",
     img: "assets/img/garrafa-pimenta-forte.webp", glow: "#e7a24a",
@@ -37,7 +37,7 @@ const FLAVORS = [
   {
     id: "especial-da-casa", name: "Especial da Casa", full: "Molho Especial da Casa",
     tag: "Da casa", pack: "Garrafa de vidro",
-    desc: "Feito com um mix de pimentas selecionadas e um toque especial defumado.",
+    desc: "Feito com um mix de pimentas selecionadas e com um toque especial defumado.",
     img: "assets/img/garrafa-especial-da-casa.webp", glow: "#d75a24",
   },
   {
@@ -47,7 +47,7 @@ const FLAVORS = [
     img: "assets/img/garrafa-chocolate-com-pimenta.webp", glow: "#8a3a1c",
   },
   {
-    id: "agridoce", name: "Geleia Agridoce", full: "Geleia de Pimenta Agridoce",
+    id: "agridoce", name: "Agridoce", full: "Geleia de Pimenta Agridoce",
     tag: "Geleia de pimenta", pack: "Garrafa de vidro",
     desc: "Com a cor mais viva da linha, entregamos o equilíbrio da ardência e a doçura da geleia. Com vocês, a nossa Agridoce.",
     img: "assets/img/garrafa-agridoce.webp", glow: "#d3262a",
@@ -55,8 +55,20 @@ const FLAVORS = [
   {
     id: "maionese-verde", name: "Maionese Verde", full: "Maionese Verde",
     tag: "Maionese", pack: "Pote de vidro",
-    desc: "Com vocês, a queridinha da Mister Chapéu. Sabor único e inigualável, do começo ao fim.",
+    desc: "Com vocês, a queridinha da Mister Chapéu. De sabor único e inigualável, do começo ao fim.",
     img: "assets/img/pote-maionese-verde.webp", wide: true, glow: "#a9b86c",
+  },
+  {
+    id: "pimentao", name: "Pimentão", full: "Molho de Pimentão",
+    tag: "Zero ardência", pack: "Garrafa de vidro",
+    desc: "Esta opção foi criada única e exclusivamente para entregar somente o sabor, com 0 teor de ardência. Apresentamos a vocês o nosso acompanhamento perfeito para os amantes do sabor.",
+    img: "assets/img/garrafa-pimenta-forte.webp", glow: "#e7a24a", // foto provisória
+  },
+  {
+    id: "agridoce-de-abacaxi", name: "Agridoce de Abacaxi", full: "Agridoce de Abacaxi",
+    tag: "Geleia de pimenta", pack: "Garrafa de vidro",
+    desc: "O equilíbrio da ardência com a doçura da geleia, agora com aquele toque especial frutado. Com vocês, o nosso Agridoce de Abacaxi.",
+    img: "assets/img/garrafa-tradicional.webp", glow: "#e9b23a", // foto provisória
   },
 ];
 
@@ -86,7 +98,7 @@ function wireWhatsApp() {
 function buildMarquee() {
   const track = $("#marquee");
   if (!track) return;
-  const one = FLAVORS.map((f) => `<span class="marquee__item">${esc(f.name)}<img src="${HAT}" alt="" width="520" height="379"></span>`).join("");
+  const one = FLAVORS.map((f) => `<span class="marquee__item"><span class="marquee__text">${esc(f.name)}</span><img src="${HAT}" alt="" width="520" height="379"></span>`).join("");
   track.innerHTML = one + one;
 }
 
