@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://misterchapeu.com.br/sitemap.xml
